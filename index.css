@@ -1,0 +1,54 @@
+body{
+    font-size: small;
+    margin-left: 200px;
+}
+
+label{
+    margin-top: 30px;
+}
+
+input, label {
+    display: block;
+    
+}
+
+input{
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 25px;
+    width: 500px;
+    margin-top: 5px;
+}
+
+.main_div{
+    height: 50px;
+    padding-bottom: 20px;
+}
+
+.inputName_item{
+    width: 230px;
+}
+
+.inputs_div{
+    position: absolute;
+    
+}
+
+.last_name{
+    left: 462px;
+}
+
+.the_checkbox{
+    display: inline;
+    margin-top: none;
+    height: auto;
+    width: auto;
+}
+ button{
+    border-radius: 5px;
+    background-color:#9866C7 ;
+    height: 35px;
+    width: 500px;
+    margin-top: 20px;
+    border: 1px solid grey;
+ }
