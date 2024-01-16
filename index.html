@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoginInfo</title><link rel="stylesheet" href="index.css">
+    <title>LoginInfo</title><link rel="stylesheet" href="index.css"><link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
 </head>
 <body>
     <h1>My info</h1>
@@ -13,13 +13,19 @@
         <div class="inputs_div">
             <label for="">First name'</label>
             <input type="text" class="inputName_item input_box"  id="firstName">
-            <span></span>
+            <div id="name_lock">
+            <i class="fa solid fa-lock my_custom_class_lock custom_lock1 "></i>
+            </div>
+            <span id="firstname_alert"></span>
         </div>  
 
         <div class="inputs_div last_name">
             <label for="">Last name'</label>
             <input type="text" class="inputName_item input_box" id="">
-            <span></span>
+            <div class="name_lock">
+            <i class="fa solid fa-lock my_custom_class_lock custom_lock1"></i>
+            </div>
+            <span id="lastName_alert"></span>
         </div>
     </div>
     </section>
@@ -29,17 +35,30 @@
         <div>
             <label for="">Email address'</label>
             <input type="text" class="input_box"  id="">
+            <div>
+            <i class="fa solid fa-lock my_custom_class_lock custom_lock3 input_icon"></i>
+            </div>
             <span></span>
 
             <label for="">Phone number'</label>
-            <input type="text" class="input_box" id="" placeholder="(###)### - ####" >
+            <input type="text" class="input_box" id="" placeholder="(###)### - ####">
+            <div> 
+            <i class="fa solid fa-lock my_custom_class_lock custom_lock4 input_icon"></i>
+            </div>
             <span></span>
+
 
             <label for="">Create a password</label>
             <input type="text" class="input_box" id="">
-            
+            <div>
+            <i class="fa solid fa-lock my_custom_class_lock input_icon custom_lock5"></i>
+            </div>    
+
             <label for="">Repeat Your password</label>
             <input type="text" name="input_box" id="">
+            <div>
+            <i class="fa solid fa-lock my_custom_class_lock input_icon custom_lock6"></i>
+            </div>
             <input type="checkbox" class="the_checkbox" id=""> <label for="" class="the_checkbox">I agree and assent to the <b><u>Terms of Use Agreement</u></b> </label>
         </div>
     </section>

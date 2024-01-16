@@ -8,6 +8,44 @@ input:focus{
     border-color: 4px solid green;
  }
 
+
+ .custom_lock1{
+    left: 220px;
+    top: 60%;
+ }
+
+
+
+.input_icon{
+    left: 690px;
+}
+
+.custom_lock4{
+    top:37%;
+}
+ 
+.custom_lock3{
+    top:26%;
+}
+
+.custom_lock5{
+    top: 48%;
+}
+
+.custom_lock6{
+    top: 59%;
+}
+
+.my_custom_class_lock{
+    position: absolute;
+    
+    
+}
+
+#name_lock{
+    display: none;
+}
+
 label{
     margin-top: 30px;
 }
@@ -23,15 +61,17 @@ input{
     height: 25px;
     width: 500px;
     margin-top: 5px;
+    position: relative;
 }
 
 .main_div{
     height: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .inputName_item{
     width: 230px;
+    
 }
 
 .inputs_div{
@@ -57,6 +97,7 @@ input{
     margin-top: 20px;
     border: 1px solid grey;
  }
+
 
  input:focus{
     border: 2px solid green;
