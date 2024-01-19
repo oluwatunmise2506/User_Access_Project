@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoginInfo</title><link rel="stylesheet" href="index.css"><link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <title>LoginInfo</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
 </head>
 <body>
     <h1>My info</h1>
@@ -12,20 +12,22 @@
     <div class="main_div">
         <div class="inputs_div">
             <label for="">First name'</label>
-            <input type="text" class="inputName_item input_box"  id="firstName">
-            <div id="name_lock">
+            <input type="text" class="inputName_item input_box"  id="firstName" onfocusin="displayText(`firstname_alert`, `firstnameItem`)"
+             onfocusout="removeText(`firstName`, `firstname_alert`, `firstnameItem`)">
+            <div class="name_lock" id="firstnameItem">
             <i class="fa solid fa-lock my_custom_class_lock custom_lock1 "></i>
             </div>
-            <span id="firstname_alert"></span>
+            <span id="firstname_alert" class="textContainer">Firstname is required</span>
         </div>  
 
         <div class="inputs_div last_name">
             <label for="">Last name'</label>
-            <input type="text" class="inputName_item input_box" id="">
-            <div class="name_lock">
+            <input type="text" class="inputName_item input_box" id="lastName" onfocusin="displayText(`lastName_alert`, `lastnameItem`)"
+            onfocusout="removeText(`last_name`, `lastName_alert`, `lastnameItem`)">
+            <div class="name_lock" id="lastnameItem">
             <i class="fa solid fa-lock my_custom_class_lock custom_lock1"></i>
             </div>
-            <span id="lastName_alert"></span>
+            <span id="lastName_alert" class="textContainer">Lastname is required</span>
         </div>
     </div>
     </section>
@@ -34,18 +36,19 @@
     <section>
         <div>
             <label for="">Email address'</label>
-            <input type="text" class="input_box"  id="">
-            <div>
+            <input type="text" class="input_box"  id="emailItem" onfocusin="displayText(`email_alert`, `emailLock`)" onfocusout="removeText(`emailItem`,`email_alert`, `emailLock` )">
+            <div class="name_lock" id="emailLock">
             <i class="fa solid fa-lock my_custom_class_lock custom_lock3 input_icon"></i>
             </div>
-            <span></span>
+            <span id="email_alert" class="textContainer">Email is required</span>
 
             <label for="">Phone number'</label>
-            <input type="text" class="input_box" id="" placeholder="(###)### - ####">
-            <div> 
+            <input type="text" class="input_box" id="numberItem" placeholder="(###)### - ####" onfocusin ="displayText(`number_alert`, `numberLock`)"
+            onfocusout="removeText(`numberItem`, `number_alert`, `numberLock`)">
+            <div class="name_lock" id="numberLock"> 
             <i class="fa solid fa-lock my_custom_class_lock custom_lock4 input_icon"></i>
             </div>
-            <span></span>
+            <span id="number_alert" class="textContainer">Mobile number is required</span>
 
 
             <label for="">Create a password</label>

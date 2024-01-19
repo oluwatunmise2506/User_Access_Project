@@ -14,26 +14,28 @@ input:focus{
     top: 60%;
  }
 
-
+.textContainer{
+    display: none;
+}
 
 .input_icon{
     left: 690px;
 }
 
 .custom_lock4{
-    top:37%;
+    top:38%;
 }
  
 .custom_lock3{
-    top:26%;
+    top:27%;
 }
 
 .custom_lock5{
-    top: 48%;
+    top: 49%;
 }
 
 .custom_lock6{
-    top: 59%;
+    top: 60%;
 }
 
 .my_custom_class_lock{
@@ -42,7 +44,7 @@ input:focus{
     
 }
 
-#name_lock{
+.name_lock{
     display: none;
 }
 

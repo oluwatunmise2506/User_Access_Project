@@ -1,13 +1,20 @@
 // $(document).ready(function(){
 //     alert("yemialadeeeeeeeeeeeeeeeeee");
 // });
-let array = ["#firstName", "#lastName" ]
 
 
-$(array[0]).on( "focusin", function inputName() {
-    let theFirstName = $("#firstname_alert");
-    theFirstName .text("First name required");
-    theFirstName .css("color", "red");
-    $("#name_lock") .css("display", "inline")
+function displayText( alertMessage  , textContainer ) {
+    $(`#${alertMessage}`) .show();
+    $(`#${alertMessage}`) .css("color", "red");
+    $(`#${textContainer}`) .css("display" , "inline");
 
-});
+
+};
+
+function removeText(inputClicked , alertMessage , textContainer) {
+    $(`#${inputClicked}`) . focusout($(`#${alertMessage}`) .remove())
+    $(`#${textContainer}`) .css("display" , "none");
+
+}
+
+
